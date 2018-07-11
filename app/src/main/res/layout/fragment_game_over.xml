@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:background="@color/darkGray">
+
+    <TextView
+        android:id="@+id/gameScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/gameOverTextView"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textview_style"
+        android:text="@string/game_score_text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/lightGreen"
+        android:fontFamily="@font/vcrosdmono1001"/>
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/gameScoreTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/vcrosdmono1001"
+        android:text="@string/game_over_text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/highScoreTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/playAgainButton"
+        android:layout_marginTop="10dp"
+        android:text="@string/high_scores_text"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/vcrosdmono1001"/>
+
+    <TextView
+        android:id="@+id/noHighScoresTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/highScoreTitleTextView"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        android:text="@string/no_high_scores_text"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/vcrosdmono1001"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_below="@id/noHighScoresTextView">
+
+        <TextView
+            android:id="@+id/gameNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_number_header"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/vcrosdmono1001"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </android.support.v4.widget.Space>
+
+        <TextView
+            android:id="@+id/gameScoreHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score_header"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/vcrosdmono1001"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </android.support.v4.widget.Space>
+
+        <TextView
+            android:id="@+id/gameTimeHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_header"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/vcrosdmono1001"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/gameOverTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/game_over_screen_text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/red"
+        android:fontFamily="@font/vcrosdmono1001"/>
+
+</RelativeLayout>
